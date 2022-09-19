@@ -1,0 +1,303 @@
+/* Variables */
+@import './misc/variables';
+
+/* Global */
+@import './misc/normalize';
+
+/* Home - header */
+
+body {
+
+    .contain-principal-section{
+        
+        .nav-container{
+            max-width: 1080px;
+            margin: 0 auto;
+    
+            .header {
+                .mode {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3rem;
+                    cursor: pointer;
+        
+                    img {
+                        width: 90px;
+                    }
+                }
+            }
+        
+            .home {
+                font-size: 2em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 20rem;
+        
+                .texto {
+                    width: 40rem;
+                }
+        
+                .nav {
+                    display: flex;
+                    align-items: center;
+                    position: sticky;
+                    cursor: pointer;
+        
+                    img{
+                        transition: 0.3s ease-in-out;
+                    }
+        
+                    img:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .container{
+        max-width: 1080px;
+        margin: 0 auto;
+
+        .container-sobre-mi {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .sobre-mi {
+            display: flex;
+            margin-top: 30rem;
+            margin-bottom: 30rem;
+            gap: 3rem;
+    
+            .container-descripcion {
+                img {
+                    width: 30rem;
+                }
+            }
+    
+            .descripcion1 {
+                margin-left: 1rem;
+    
+                .texto1 {
+                    margin-bottom: 2rem;
+                }
+    
+                .texto2 {
+                    margin-bottom: 4rem;
+                }
+            }
+    
+            h2 {
+                font-size: 2em;
+            }
+    
+            p {
+                font-size: 1.5em;
+                width: 25rem;
+            }
+    
+            img {
+                width: 7rem;
+            }
+    
+            .boton {
+                position: absolute;
+                width: 140px;
+                height: 40px;
+                text-align: center;
+                margin-top: 5rem;
+                font-size: 1.6em;
+                padding: 0.5rem;
+                transition: 0.3s ease-in-out;
+    
+                
+                &:hover {
+                    svg rect {
+                        stroke-dasharray: 50, 380;
+                        stroke-dashoffset: 200;
+                        stroke: rgb(157, 100, 255);
+                    }
+                }
+    
+                &:hover {
+                    transform: scale(1.1);
+                    background: linear-gradient(to right, #ff9beb, #ff9af8, #f28eff, #8d74ff, #ad94ff, #ff83c7, #ff8cb8, #ff98ad, #ffaa9b, #ffc38b, #ffe186, #f8ff93);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+    
+                svg,
+                svg rect {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    fill: transparent;
+                }
+    
+                rect {
+                    stroke: rgb(255, 255, 179);
+                    stroke-width: 4;
+                    transition: 1s;
+                    stroke-dasharray: 400, 400;
+                    stroke-dashoffset: 0;
+                }
+            }
+        }
+    
+        .sobre-mi2 {
+           margin-top: 30rem;
+    
+            img {
+               
+                width: 55rem;
+                z-index: -1;
+               
+            }
+    
+            .textos {
+                position: absolute;
+                top: 155%;
+                left: 55%;
+                width: 35rem;
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .container-seccion-trabajos{
+        max-width: 1080px;
+        margin: 0 auto;
+
+        .container-trabajos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .texto-trabajos{
+                width: 50rem;
+            }
+    
+            .div-trabajos{
+                display:flex;
+                flex-direction: row;
+                gap:8rem;
+                img{
+                    width: 40rem;
+                }
+            }
+        }
+    }
+
+    .container-contacto{
+        max-width: 1080px;
+        margin: 0 auto;
+
+        .servicios-contacto{
+            margin-top:30rem;
+            margin-bottom:30rem;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+        .div-info{
+            margin-right: 30rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 6rem;
+
+            .decorativo1{
+                width: 1rem;
+                margin-right: 50rem;
+            }
+    
+            .decorativo2{
+                width: 1rem;
+                margin-left: 50rem;
+            }
+                
+            .info{
+                
+                .forma5{
+                    cursor: pointer;
+                    width: 40rem;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                   
+                }
+    
+                .tipografía-servicios{
+                    width: 20rem;
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 10rem;
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+        .div-contacto{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 10rem;
+            
+            div{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 5rem;
+                cursor: pointer;
+                img{
+                    width: 4rem;
+                    transition: 0.3s ease-in-out;
+    
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            
+            span{
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                font-size: 2em;
+            }
+        }
+        
+    }
+}
+    
+    .footer {
+        height: 200px;
+        margin-top: 160px;
+        background-color: rgb(255, 255, 255);
+
+        img{
+            width: 2rem;
+        }
+    
+        .copy {
+            color: rgb(45, 45, 45);
+            font-weight: 700;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            gap: 5rem;
+        }
+    }
+}
